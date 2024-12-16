@@ -8,7 +8,7 @@ function Login() {
   const navigate = useNavigate();
   const [err, setErr] = useState(false);
   axios.defaults.withCredentials = true;
-  const url = "http://localhost:3000";
+  const url = "https://authentication-eab6.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

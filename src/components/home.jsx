@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await axios.post('http://localhost:3000/home');
+        const result = await axios.post('https://authentication-eab6.onrender.com/home');
         console.log(result);
         if (result.data !== 'success') {
           navigate('/');
@@ -25,7 +25,7 @@ export default function Home() {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:3000/logout');  // Send a request to the backend to log out
+      await axios.post('https://authentication-eab6.onrender.com/logout');  // Send a request to the backend to log out
       navigate('/');  // Navigate to the login page after successful logout
     } catch (err) {
       console.log(err);

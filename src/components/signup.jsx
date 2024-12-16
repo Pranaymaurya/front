@@ -8,7 +8,7 @@ function Signup() {
   const [name, setName] = useState('');
   const [err, setErr] = useState(false);
   const navigate = useNavigate();
-  const url ="http://localhost:3000";
+  const url ="https://authentication-eab6.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
